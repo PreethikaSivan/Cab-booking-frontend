@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign-Up</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book a Cab</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Booking Information</h2>
+        <p id="booking-info"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cab Booking Service</p>
+    </footer>
+    <script>
+        const bookingInfo = localStorage.getItem('bookingDetails');
+        document.getElementById('booking-info').innerText = bookingInfo || 'No booking details found.';
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Cab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Cab</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign-Up</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book a Cab</a>
+        </nav>
+    </header>
+    <main>
+        <form id="booking-form">
+            <label for="pickup">Pick-Up Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+            
+            <label for="drop">Drop-Off Location:</label>
+            <input type="text" id="drop" name="drop" required>
+            
+            <label for="distance">Distance (km):</label>
+            <input type="number" id="distance" name="distance" required>
+            
+            <label for="cab-type">Cab Type:</label>
+            <select id="cab-type" name="cab-type" required>
+                <option value="economy">Economy (₹10/km)</option>
+                <option value="premium">Premium (₹15/km)</option>
+                <option value="suv">SUV (₹20/km)</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cab Booking Service</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
